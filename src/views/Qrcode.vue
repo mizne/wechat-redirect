@@ -20,10 +20,9 @@ export default {
 
     axios
       .get(
-        `https://deal.xiaovbao.cn/api/test/admin/QRCodeUrl?scene=${obj.scene}&merchant=${obj.merchantName}`
+        `https://deal.xiaovbao.cn/api/test/admin/QRCodeUrl?scene=${obj.scene}&merchant=${obj.merchant}`
       )
       .then(resp => {
-        console.log(resp.data)
         try {
           const redirectUrl = resp.data.result
           window.location.href = redirectUrl.url
