@@ -20,7 +20,7 @@ export default {
 
     axios
       .get(
-        `https://deal.xiaovbao.cn/api/test/admin/QRCodeUrl?scene=${obj.scene}&merchant=${obj.merchant}`
+        `https://sales.xiaovbao.cn/api/test/admin/QRCodeUrl?scene=${obj.scene}&merchant=${obj.merchant}`
       )
       .then(resp => {
         try {
