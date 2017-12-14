@@ -47,12 +47,12 @@ export default {
     }
 
     if (obj.state === 'bindWechat') {
-      window.location.href = `http://test.xiaovbao.cn/bind-wechat?code=${obj.code}&state=bindWechat`
+      window.location.href = `http://manager.xiaovbao.cn/bind-wechat?code=${obj.code}&state=bindWechat`
       return
     }
 
     if (obj.state === 'order') {
-      window.location.href = `http://test.xiaovbao.cn/bind-wechat?code=${obj.code}&state=order`
+      window.location.href = `http://manager.xiaovbao.cn/bind-wechat?code=${obj.code}&state=order`
       return
     }
   }
